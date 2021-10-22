@@ -60,7 +60,7 @@ section {
     list-style: none;
     text-decoration: none;
     padding: 0 10px;
-    color: var(--black);
+    color: #fff;
     font-size: 1rem;
     letter-spacing: .1rem;
     font-weight: 600;
