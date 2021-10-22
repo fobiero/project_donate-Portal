@@ -1,0 +1,280 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap'); */
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --color: #ffc400;
+    --black: #130f40;
+    --light-color: #666;
+    --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    --border: .1rem solid rgba(0, 0, 0, .1);
+    --outline: .1rem solid rgba(0, 0, 0, .1);
+    --outline-hover: .2rem solid var(--black);
+}
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f8f8f8;
+}
+
+section {
+    padding: 3rem 8rem;
+}
+
+.banner {
+    background-image: url("../images/banner-3.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.2rem;
+    align-items: center;
+}
+
+.logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.logo span {
+    color: var(--color);
+    font-weight: bolder;
+}
+
+.nav-links a {
+    list-style: none;
+    text-decoration: none;
+    padding: 0 20px;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+
+/* banner intro  */
+
+.banner-intro h4 {
+    margin-top: 80px;
+    font-size: 4rem;
+    text-transform: capitalize;
+    line-height: 5.5rem;
+    font-weight: bolder;
+    letter-spacing: .1rem;
+    color: var(--black);
+}
+
+.banner-intro p {
+    font-size: 1.7rem;
+    padding: 20px 0;
+    line-height: 2.3 rem;
+    font-weight: 400;
+    color: inherit;
+    margin-bottom: 40px;
+    color: var(--black);
+}
+
+.btn-donate {
+    padding: 1rem 4rem;
+    border: none;
+    background-color: var(--color);
+    color: #fff;
+    font-size: 1.4rem;
+    cursor: pointer;
+    border-radius: 40px;
+    margin-bottom: 80px;
+}
+
+
+/* main-page content  */
+
+.main-page {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 1.2rem;
+}
+
+.main-page .box {
+    background-color: #fff;
+    padding: 2rem;
+    box-shadow: var(--box-shadow);
+}
+
+.main-page .box h3 {
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+    color: var(--black);
+}
+
+.main-page .box p {
+    color: var(--light-color);
+    font-size: 1rem;
+    margin-bottom: 1.6rem;
+}
+
+.main-page .box a {
+    color: var(--color);
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+
+/* Join Event content  */
+
+.join-event {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 1.2rem;
+}
+
+.join-event .support h3 {
+    font-size: 2rem;
+    color: #fff;
+    background-color: var(--black);
+    padding: 2rem;
+}
+
+.join-event .support h3 span {
+    color: var(--color);
+}
+
+.join-event .support .card {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+    border: 3px solid var(--color);
+    padding: 1rem 0 1rem 1rem;
+    align-items: center;
+    background-color: #fff;
+}
+
+.join-event .support .card img {
+    width: 7.5rem;
+    height: 7.5rem;
+}
+
+.join-event .support .card .mid-content {
+    text-align: left;
+}
+
+.join-event .support .card .mid-content h4 {
+    color: var(--black);
+    font-size: 1.4rem;
+    padding: 0 0 .7rem 0;
+    margin-top: -2rem;
+}
+
+.join-event .support .card .mid-content p {
+    color: var(--light-color);
+    font-size: 1.2rem;
+}
+
+.join-event .support .card .mid-content small {
+    color: var(--black);
+    font-weight: bold;
+    line-height: 1.7rem;
+    font-size: 1.2rem;
+}
+
+.join-event .support .card #date {
+    background-color: var(--color);
+    color: #fff;
+    padding: 1rem 0 1rem 1rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.join-event .supply-food {
+    background-color: #fff;
+    box-shadow: var(--box-shadow);
+}
+
+.join-event .supply-food img {
+    width: 100%;
+    height: 50vh;
+}
+
+.join-event .supply-food .sup-cont {
+    padding: 2rem 2rem 0rem 2rem;
+}
+
+.join-event .supply-food .sup-cont h4 {
+    color: var(--black);
+    font-size: 1.8rem;
+    line-height: 1.5;
+    margin-bottom: .85rem;
+}
+
+.join-event .supply-food .sup-cont .cash {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+.join-event .supply-food .sup-cont p {
+    color: var(--light-color);
+}
+
+.join-event .supply-food .sup-cont .btn {
+    margin-top: 3.5rem;
+}
+
+.join-event .supply-food .sup-cont .btn a {
+    display: inline;
+    text-decoration: none;
+    padding: .8rem 2rem;
+    color: #fff;
+    border-radius: 40px;
+}
+
+.join-event .supply-food .sup-cont .btn a.donate {
+    background-color: var(--color);
+    margin-right: .65rem;
+}
+
+.join-event .supply-food .sup-cont .btn a.read {
+    background-color: var(--black);
+}
+
+
+/* SUB FOOTER  */
+
+.sub-footer {
+    background-color: #fff;
+}
+
+.sub-footer .reach-out {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 1.2rem;
+    align-items: center;
+}
+
+.sub-footer .reach-out p {
+    font-size: 3.5rem;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.sub-footer .reach-out p span {
+    color: var(--color);
+}
+
+.sub-footer .reach-out img {
+    width: 100%;
+}
